@@ -349,13 +349,6 @@ theme.components = {
             },
         },
     },
-    MuiToggleButtonGroup: {
-        styleOverrides: {
-            root: {
-                border: `2px solid ${Colors.accent}`,
-            },
-        },
-    },
     MuiDataGrid: {
         styleOverrides: {
             root: {
