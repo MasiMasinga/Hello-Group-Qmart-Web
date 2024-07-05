@@ -14,22 +14,23 @@ import Schedule from './common/components/Schedule';
 import Players from './common/components/Players';
 import Results from './common/components/Results';
 
+
 function App() {
 
-  return (
-    <ThemeProvider theme={theme}>
-      <SnackbarProvider maxSnack={3}>
-        <StateProvider>
-          <PlayerProvider>
-            <h1>Sports App</h1>
-            <Schedule />
-            <Players />
-            <Results />
-          </PlayerProvider>
-        </StateProvider>
-      </SnackbarProvider>
-    </ThemeProvider>
-  )
+    return (
+        <ThemeProvider theme={theme}>
+            <SnackbarProvider maxSnack={3}>
+                <StateProvider>
+                    <PlayerProvider>
+                        <h1>Sports App</h1>
+                        <Schedule />
+                        <Players />
+                        <Results />
+                    </PlayerProvider>
+                </StateProvider>
+            </SnackbarProvider>
+        </ThemeProvider>
+    )
 }
 
 export default App

@@ -109,43 +109,6 @@ theme.typography = {
         color: Colors.greyDark,
         fontFamily: ThemeFontFamily,
     },
-    link: {
-        fontWeight: 700,
-        fontSize: "14px",
-        color: Colors.primary,
-        fontFamily: ThemeFontFamily,
-    },
-    meta: {
-        fontFamily: ThemeFontFamily,
-        fontWeight: 400,
-        fontSize: "12px",
-        color: Colors.greyDark,
-        background: Colors.greyMed,
-        lineHeight: "initial",
-        padding: "5px 14px",
-        borderRadius: "10px",
-        minWidth: "fit-content",
-        height: "fit-content",
-    },
-    tag: {
-        fontWeight: 400,
-        fontSize: "12px",
-        color: Colors.white,
-        fontFamily: ThemeFontFamily,
-    },
-    chip: {
-        fontFamily: ThemeFontFamily,
-        fontWeight: 400,
-        fontSize: "12px",
-        color: Colors.greyDark,
-        background: Colors.white,
-        padding: "5px 14px",
-        borderRadius: "10px",
-        minWidth: "fit-content",
-        height: "fit-content",
-        borderColor: Colors.greyDark,
-        border: `2px solid ${Colors.greyDark}`,
-    },
 };
 
 theme.components = {
