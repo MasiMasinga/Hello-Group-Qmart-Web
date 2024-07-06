@@ -3,9 +3,6 @@ import React, { useContext } from 'react';
 // Context
 import { PlayerContext } from '../context/PlayerContext';
 
-// Components
-import Typography from './Typography';
-
 // Mui
 import Stack from '@mui/material/Stack';
 import Skeleton from '@mui/material/Skeleton';
@@ -16,7 +13,6 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
-import { Colors } from '../utils/constants';
 
 
 const Results = () => {

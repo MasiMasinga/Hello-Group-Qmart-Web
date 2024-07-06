@@ -6,13 +6,14 @@ import { StateContext } from './StateContext';
 // API
 import GeneralService from '../../services/general/general.service';
 
+
 export const PlayerContext = createContext();
 
 export const PlayerProvider = ({ children }) => {
     const { setNotificationMessage } = useContext(StateContext);
 
     const [players, setPlayers] = useState({
-        loading: false,
+        loading: true,
         data: [{
             "name": "Bruce Bvuma",
             "rank": 44,
@@ -176,7 +177,7 @@ export const PlayerProvider = ({ children }) => {
         ],
     });
     const [schedule, setSchedule] = useState({
-        loading: false,
+        loading: true,
         data: [{
                 "date": "2024-07-01",
                 "time": "18:00",
@@ -210,7 +211,7 @@ export const PlayerProvider = ({ children }) => {
         ],
     });
     const [results, setResults] = useState({
-        loading: false,
+        loading: true,
         data: [
             {
                 "date": "2024-05-02",

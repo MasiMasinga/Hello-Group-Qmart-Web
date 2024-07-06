@@ -3,9 +3,6 @@ import React, { useContext } from 'react';
 // Context
 import { PlayerContext } from '../context/PlayerContext';
 
-// Components
-import Typography from './Typography';
-
 // Mui
 import Stack from '@mui/material/Stack';
 import Table from '@mui/material/Table';

@@ -1,8 +1,5 @@
 import React from "react";
 
-// Components
-import Button from "./Button";
-
 // Mui
 import Box from "@mui/material/Box";
 import MuiTabs from "@mui/material/Tabs";
