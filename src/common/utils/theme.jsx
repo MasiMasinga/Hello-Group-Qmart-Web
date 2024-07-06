@@ -288,7 +288,7 @@ theme.components = {
         styleOverrides: {
             root: {
                 ".MuiTabs-indicator": {
-                    backgroundColor: Colors.accent,
+                    backgroundColor: Colors.primary,
                 },
             },
         },
@@ -299,7 +299,7 @@ theme.components = {
                 fontFamily: ThemeFontFamily,
                 fontWeight: 700,
                 "&.Mui-selected": {
-                    color: Colors.accent,
+                    color: Colors.primary,
                 },
             },
         },
@@ -307,40 +307,8 @@ theme.components = {
     MuiToggleButtonGroup: {
         styleOverrides: {
             root: {
-                border: `2px solid ${Colors.accent}`,
+                border: `2px solid ${Colors.primary}`,
                 padding: "4px",
-            },
-        },
-    },
-    MuiDataGrid: {
-        styleOverrides: {
-            root: {
-                "& .MuiDataGrid-columnHeader": {
-                    outline: "none !important",
-                },
-                "& .MuiDataGrid-iconSeparator": {
-                    display: "none",
-                },
-                "& .MuiDataGrid-columnHeaderTitle": {
-                    fontFamily: ThemeFontFamily,
-                    fontSize: "14px",
-                    fontWeight: 700,
-                    color: Colors.greyDark,
-                },
-                "& .MuiDataGrid-cell": {
-                    outline: "none !important",
-                    fontFamily: ThemeFontFamily,
-                    fontSize: "14px",
-                    color: Colors.black,
-                },
-            },
-        },
-    },
-    MuiListItem: {
-        styleOverrides: {
-            root: {
-                fontFamily: ThemeFontFamily,
-                fontSize: "14px",
             },
         },
     },
