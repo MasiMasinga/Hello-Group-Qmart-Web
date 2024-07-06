@@ -13,7 +13,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
-
+import Link from '@mui/material/Link';
 
 const Results = () => {
     const { results } = useContext(PlayerContext);
@@ -53,9 +53,9 @@ const Results = () => {
                                     <TableCell>{match.opponent}</TableCell>
                                     <TableCell>{match.score}</TableCell>
                                     <TableCell>
-                                        <a href={match.highlights} target="_blank" rel="noreferrer">
+                                        <Link href={match.highlights_url} target="_blank" rel="noreferrer">
                                             Watch
-                                        </a>
+                                        </Link>
                                     </TableCell>
                                 </TableRow>
                             ))

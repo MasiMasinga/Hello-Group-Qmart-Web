@@ -18,6 +18,8 @@ import Skeleton from '@mui/material/Skeleton';
 const Schedule = () => {
     const { schedule } = useContext(PlayerContext);
 
+    console.log(schedule.data);
+
     return (
         <Stack spacing={2}>
             <TableContainer component={Paper}>
