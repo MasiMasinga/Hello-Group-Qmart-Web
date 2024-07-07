@@ -62,7 +62,7 @@ const Results = () => {
                                         sx={{
                                             fontWeight: 'bold',
                                             color: match.score.split('-').reduce((acc, curr, idx, src) => {
-                                                if (idx === 0) return acc; // Skip the first iteration
+                                                if (idx === 0) return acc; 
                                                 return parseInt(curr, 10) > parseInt(src[0], 10) ? Colors.red :
                                                     parseInt(curr, 10) < parseInt(src[0], 10) ? Colors.green : Colors.yellowDark;
                                             }),
