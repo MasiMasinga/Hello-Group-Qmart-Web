@@ -14,6 +14,9 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import Skeleton from '@mui/material/Skeleton';
 
+// Utils
+import { formatDate } from '../utils/helpers';
+
 
 const Schedule = () => {
     const { schedule } = useContext(PlayerContext);
@@ -51,7 +54,9 @@ const Schedule = () => {
                                 </TableRow>
                             ) : schedule.data.map(match => (
                                 <TableRow key={match.date + match.opponent}>
-                                    <TableCell>{match.date}</TableCell>
+                                    <TableCell>
+                                        {formatDate(match.date)}
+                                    </TableCell>
                                     <TableCell sx={{ fontWeight: "bold" }}>
                                         {match.time}
                                     </TableCell>

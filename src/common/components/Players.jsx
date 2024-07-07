@@ -14,6 +14,10 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 
+// Utils
+import { Colors } from '../utils/constants';
+import { formatDate } from '../utils/helpers';
+
 
 const Players = () => {
     const { players } = useContext(PlayerContext);
@@ -60,9 +64,19 @@ const Players = () => {
                                     <TableRow key={player.name}>
                                         <TableCell>{player.name}</TableCell>
                                         <TableCell>{player.rank}</TableCell>
-                                        <TableCell>{player.position}</TableCell>
+                                        <TableCell
+                                            sx={{
+                                                color: player.position === 'Goalkeeper' ? Colors.green :
+                                                    player.position === 'Defender' ? Colors.accent :
+                                                        player.position === 'Midfielder' ? Colors.yellowDark :
+                                                            player.position === 'Forward' ? Colors.red : Colors.black,
+                                                fontWeight: 'bold'
+                                            }}
+                                        >{player.position}</TableCell>
                                         <TableCell>{player.age}</TableCell>
-                                        <TableCell>{player.start_date}</TableCell>
+                                        <TableCell>
+                                            {formatDate(player.start_date)}
+                                        </TableCell>
                                         <TableCell>
                                             <a
                                                 href={player.google_image_url}
@@ -72,7 +86,12 @@ const Players = () => {
                                                 <img
                                                     src={player.google_image_url}
                                                     alt={player.name}
-                                                    style={{ width: '50px', height: '50px', borderRadius: '50%' }}
+                                                    style={{
+                                                        width: '50px',
+                                                        height: '50px',
+                                                        borderRadius: '50%',
+                                                        objectFit: 'cover'
+                                                    }}
                                                 />
                                             </a>
                                         </TableCell>
