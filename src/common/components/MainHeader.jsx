@@ -15,6 +15,7 @@ const MainHeader = () => {
         <Stack
             direction="row"
             alignItems="center"
+            justifyContent="center"
             spacing={2}
             sx={{ my: 2 }}
         >
