@@ -72,7 +72,9 @@ const Players = () => {
                                                             player.position === 'Forward' ? Colors.red : Colors.black,
                                                 fontWeight: 'bold'
                                             }}
-                                        >{player.position}</TableCell>
+                                        >
+                                            {player.position}
+                                        </TableCell>
                                         <TableCell>{player.age}</TableCell>
                                         <TableCell>
                                             {formatDate(player.start_date)}
