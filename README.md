@@ -2,6 +2,10 @@
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
+
+## WEB APP URL
+- http://13.246.58.248/
+
 ## Overview
 This React application is designed to display information about match schedules, player profiles, and match results for a sports team. It interacts with three API endpoints: `/api/schedule`, `/api/players`, and `/api/results`.
 
