@@ -27,8 +27,8 @@ This React application is designed to display information about match schedules,
 ### Installation
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/react-sports-app.git
-   cd react-sports-app
+   git clone https://github.com/MasiMasinga/Hello-Group-Qmart-Web.git
+   cd Hello-Group-Qmart-Web
 
 2. **Install dependencies**:
     ```bash
@@ -36,17 +36,15 @@ This React application is designed to display information about match schedules,
     
     or
 
-    ```base
     yarn install
 
 3. **Start the development server**:
     ```bash
-    npm start
+    npm run dev
 
     or
     
-    ``bash
-    yarn start
+    yarn run dev
 
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
