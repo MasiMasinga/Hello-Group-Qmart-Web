@@ -103,12 +103,6 @@ theme.typography = {
         color: Colors.greyDark,
         fontFamily: ThemeFontFamily,
     },
-    subtitle: {
-        fontWeight: 400,
-        fontSize: "12px",
-        color: Colors.greyDark,
-        fontFamily: ThemeFontFamily,
-    },
 };
 
 theme.components = {
@@ -199,91 +193,6 @@ theme.components = {
             },
         ],
     },
-    MuiListItemButton: {
-        styleOverrides: {
-            root: {
-                ".MuiSvgIcon-root": {
-                    fontSize: 20,
-                    color: Colors.accent,
-                },
-                ".MuiListItemText-root": {
-                    fontWeight: "400",
-                },
-                "&:before": {
-                    content: `''`,
-                    opacity: "0",
-                    position: "absolute",
-                    left: 0,
-                    top: "50%",
-                    transform: "translateY(-50%)",
-                    width: 6,
-                    backgroundColor: Colors.primary,
-                    height: 35,
-                    borderRadius: "0px 10px 10px 0",
-                    transition: "0.3s ease",
-                },
-                " &.Mui-selected": {
-                    backgroundColor: "initial",
-
-                    " &:before": {
-                        opacity: "1",
-                    },
-                    ".MuiListItemText-root": {
-                        fontWeight: "700",
-                        color: Colors.accent,
-                    },
-                    ".MuiListItemIcon": {
-                        color: Colors.yellow,
-                    },
-                },
-                " &.whiteItemList": {
-                    "&:before": {
-                        opacity: "0",
-                        transform: "translateY(-50%)",
-                        backgroundColor: Colors.yellow,
-                    },
-                    " &.Mui-selected": {
-                        " &:before": {
-                            opacity: "1",
-                        },
-                        ".MuiListItemText-root": {
-                            fontWeight: "700",
-                            color: Colors.white,
-                        },
-                        ".MuiListItemIcon": {
-                            color: Colors.yellow,
-                        },
-                    },
-                },
-            },
-        },
-    },
-    MuiSlider: {
-        styleOverrides: {
-            root: {
-                "& .MuiSlider-rail": {
-                    backgroundColor: Colors.greyLight,
-                },
-                "& .MuiSlider-track": {
-                    backgroundColor: theme.palette.neutral.light,
-                    borderColor: Colors.primary,
-                },
-                "& .MuiSlider-thumb": {
-                    color: theme.palette.neutral.light,
-                    width: "14px",
-                    height: "14px",
-                },
-            },
-        },
-    },
-    MuiMenuItem: {
-        styleOverrides: {
-            root: {
-                fontFamily: ThemeFontFamily,
-                fontSize: "14px",
-            },
-        },
-    },
     MuiTabs: {
         styleOverrides: {
             root: {
@@ -304,14 +213,6 @@ theme.components = {
             },
         },
     },
-    MuiToggleButtonGroup: {
-        styleOverrides: {
-            root: {
-                border: `2px solid ${Colors.primary}`,
-                padding: "4px",
-            },
-        },
-    },
     MuiTable: {
         styleOverrides: {
             root: {
@@ -320,7 +221,6 @@ theme.components = {
             },
         },
     },
-   
 };
 
 export default theme;
